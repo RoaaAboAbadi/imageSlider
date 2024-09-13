@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slideshow</title>
+    <style>
+        .container {
+            width: 400px;
+            position: relative;
+        }
+
+        .slideshow {
+            width: 100%;
+            height: 40vh;
+            object-fit: cover;
+        }
+
+        .curcil {
+            display: inline-block;
+            border-radius: 50%;
+            background-color: white;
+            width: 15px;
+            height: 15px;
+            border: 1px solid red;
+        }
+
+        .con {
+            position: absolute;
+            background-color: #00000008;
+            bottom: 4px;
+            left: 130px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img class="slideshow" id="slideshow" src="./images/jeep3.png">
+        <div class="con">
+            <span class="curcil" id="curcil1" data-index="0"></span>
+            <span class="curcil" id="curcil2" data-index="1"></span>
+            <span class="curcil" id="curcil3" data-index="2"></span>
+            <span class="curcil" id="curcil4" data-index="3"></span>
+            <span class="curcil" id="curcil5" data-index="4"></span>
+            <!-- <span class="curcil" id="curcil6" data-index="5"></span> -->
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
